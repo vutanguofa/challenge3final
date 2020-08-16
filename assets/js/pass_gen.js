@@ -34,7 +34,27 @@ else {
 }
 
 function criteria() {
-     console.log(promptLength, promptLowercase, promptUppercase, promptNumeric);
+    console.log(promptLength, promptLowercase, promptUppercase, promptNumeric, promptSpecial);
+    if (promptLength >= 8) {
+        length = Math.ceil(Math.random() * 128);
+        window.alert(length);
+    }
+    if (promptLowercase === 1) {
+        lowercase = console.log();
+        window.alert(promptLowercase);
+    }
+    if (promptUppercase === 1) {
+        uppercase = console.log();
+        window.alert(promptUppercase);
+    }
+    if (promptNumeric === 1) {
+        numeric = console.log();
+        window.alert(promptNumeric);
+    }
+    if (promptSpecial === 1) {
+        special = console.log();
+        window.alert(promptSpecial);
+    }
 }
 
 criteria();
